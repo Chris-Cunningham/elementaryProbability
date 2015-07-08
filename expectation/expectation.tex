@@ -42,4 +42,80 @@ determines the {\em number} of spaces a player advances.
 In this situation the roll {\em is} considered to have a numerical outcome.
 \end{remark}
 
+\begin{exercise}
+Do the following experiments have numerical outcomes?
+\begin{itemize}
+\item The number of books on a randomly selected
+shelf at the library
+\begin{multipleChoice}
+\choice[correct]{Yes}
+\choice{No}
+\end{multipleChoice}
+\item The first letter of the title of a randomly selected
+book at the library
+\begin{multipleChoice}
+\choice{Yes}
+\choice[correct]{No}
+\end{multipleChoice}
+\item The time at which the next book will be checked out
+at the library
+\begin{multipleChoice}
+\choice{Yes}
+\choice{No}
+\choice[correct]{Possibly, depending on how the information will be used}
+\end{multipleChoice}
+\end{itemize}
+\end{exercise}
+
+Now suppose that an experiment has several outcomes
+$E_1,E_2,\ldots,E_n$. These should all be numbers.
+Also, suppose that $p_1$ is the probability of $E_1$,
+$p_2$ is the probability of $E_2$, and so on.
+Note that this means $1=p_1+p_2+\cdots+p_n$.
+
+\begin{definition}
+The {\em expectation} of the experiment described above
+is defined to be
+\begin{equation}\label{ExpectationDefinition}
+p_1E_1+p_2E_2+\cdots+p_nE_n.
+\end{equation}
+\end{definition}
+
+\begin{remark}
+The reason that we require the outcomes
+$E_1,E_2,\ldots,E_n$ to be numbers is because
+we add and multiply them in \autoref{ExpectationDefinition}.
+This only makes sense when $E_1,E_2,\ldots,E_n$ are numbers.
+\end{remark}
+
+\begin{example}
+\begin{itemize}
+\item Suppose multiple choice question has five answer choices
+\item $2$~points for correct response
+\item $-1/2$~point for incorrect response
+\item $0$~points for not answering
+\item Should you guess if you don't know answer?
+\item Outcomes:
+\begin{itemize}
+\item $2$ occurs with probability $1/5$ when correct answer chosen
+\item $-1/2$ occurs with probability $4/5$ when incorrect answer chosen
+\end{itemize}
+\item So $2\cdot\frac{1}{5}+\left(-\frac{1}{2}\right)\frac{4}{5}
+=\frac{2}{5}-\frac{4}{10}
+=\frac{4}{10}-\frac{4}{10}
+=0$
+is the expectation.
+\item Conclusion: guessing doesn't hurt in this case.
+\end{itemize}
+\end{example}
+
+\begin{remark}
+The expectation gives
+the expected value of an experiment {\em in long run}.
+It doesn't tell us the exact value we expect
+the next time the experiment repeated, because that
+information would generally be impossible to know.
+Expectation is used in the same way that averages are used.
+\end{remark}
+
 \end{document}
