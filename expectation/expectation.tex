@@ -82,31 +82,40 @@ p_1E_1+p_2E_2+\cdots+p_nE_n.
 \end{definition}
 
 \begin{remark}
-The reason that we require the outcomes
+The reason we require the outcomes
 $E_1,E_2,\ldots,E_n$ to be numbers is because
 we add and multiply them in \autoref{ExpectationDefinition}.
 This only makes sense when $E_1,E_2,\ldots,E_n$ are numbers.
 \end{remark}
 
 \begin{example}
-\begin{itemize}
-\item Suppose multiple choice question has five answer choices
-\item $2$~points for correct response
-\item $-1/2$~point for incorrect response
-\item $0$~points for not answering
-\item Should you guess if you don't know answer?
-\item Outcomes:
+Suppose you're taking an exam, but you
+don't know the answer to one of the
+multiple choice questions. You'll just have to guess or
+else skip the question!
+The question has five answer choices. You'll receive
+$2$~points if you answer the question correctly,
+but you'll {\em lose} $\frac{1}{2}$~point for an incorrect response!
+However, if you skip the question, you won't be penalized.
+In other words, if you don't answer the question, your total
+score on the exam will neither increase nor decrease.
+Should you guess or skip the question?
+
+We'll list all the outcomes with their probabilities,
+assuming that you decide to guess.
 \begin{itemize}
 \item $2$ occurs with probability $1/5$ when correct answer chosen
 \item $-1/2$ occurs with probability $4/5$ when incorrect answer chosen
 \end{itemize}
-\item So $2\cdot\frac{1}{5}+\left(-\frac{1}{2}\right)\frac{4}{5}
+The expectation on the question is therefore
+\[2\cdot\frac{1}{5}+\left(-\frac{1}{2}\right)\frac{4}{5}
 =\frac{2}{5}-\frac{4}{10}
 =\frac{4}{10}-\frac{4}{10}
-=0$
-is the expectation.
-\item Conclusion: guessing doesn't hurt in this case.
-\end{itemize}
+=0\]
+So it doesn't hurt to guess!
+However, see \autoref{SecondMultipleChoice} for a slight
+variation on the scoring rules
+with a very different conclusion.
 \end{example}
 
 \begin{remark}
