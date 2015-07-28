@@ -1,3 +1,6 @@
-.example{
-  color:red;
+.example > p:first-child:before {
+  //content: "example " counter(example) ". ";
+  content: "Example";
+  display: inline;
+  font-weight: bold;
 }
