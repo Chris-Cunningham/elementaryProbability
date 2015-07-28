@@ -2,7 +2,7 @@ body {
   counter-reset: example;
 }
 .example::before {
-  "example " counter(example) ". ";
+  content:"example " counter(example) ". ";
   display: inline;
   font-weight: bold;
 }
