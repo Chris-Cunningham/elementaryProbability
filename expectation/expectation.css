@@ -1,4 +1,4 @@
-.example > p:first-child:before {
+.example::before {
   //content: "example " counter(example) ". ";
   content: "Example";
   display: inline;
