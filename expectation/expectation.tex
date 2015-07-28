@@ -90,7 +90,7 @@ we add and multiply them in \autoref{ExpectationDefinition}.
 This only makes sense when $E_1,E_2,\ldots,E_n$ are numbers.
 \end{remark}
 
-\begin{example}
+\begin{example}\label{FirstExamExample}
 Suppose you're taking an exam, but you
 don't know the answer to one of the
 multiple choice questions. You'll just have to guess or
@@ -132,7 +132,31 @@ information would generally be impossible to know.
 Expectation is used in the same way that averages are used.
 \end{remark}
 
-more stuff
+\begin{exercise}
+This exercise is a modification of \autoref{FirstExamExample}.
+Now suppose that you receive only 1~point
+for a correct response
+but you lose $1/2$~point for an incorrect response.
+Now should you guess or skip the question?
+
+Begin by calculating the probabilities of each of the posible outcomes.
+\begin{itemize}
+\item $1$ occurs with probability $\answer{1/5}$
+\item $-1/2$ occurs with probability $\answer{4/5}$
+\end{itemize}
+
+Now multiply each probability by its outcome and add them up.
+The expection is $\answer{-1/5}$.
+
+You conclude that
+\begin{multipleChoice}
+\choice[correct] There is no harm in guessing.
+\choice You shouldn't guess.
+\choice We can't conclude anything.
+\end{multipleChoice}
+\end{exercise}
+
+
 
 \end{document}
 http://497a6980.ngrok.com/course/marcusjbishop/elementaryProbability/master/expectation/expectation.tex
