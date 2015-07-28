@@ -1,9 +1,10 @@
 .abstract::before{
-  font-style:bold;
+  font-weight:bold;
   content:"Abstract. ";
+  font-style:normal;
 }
 .abstract{
   text-align:center;
-  font-style:emphasis;
+  font-style:italic;
   margin-bottom:2em;
 }
