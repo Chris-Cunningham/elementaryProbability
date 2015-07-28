@@ -1,0 +1,7 @@
+.abstract::before{
+  content:"Abstract. ";
+}
+.abstract{
+  text-align:center;
+  font-style:italic;
+}
