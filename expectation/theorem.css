@@ -28,9 +28,9 @@ acknowledgement yellow,
 algorithm yellow,
 notation yellow,
 criterion yellow,
-exercise gray,
-problem gray,
-question gray; 
+exercise blue,
+problem blue,
+question blue; 
 
 
 /* This is a faux loop that doesn't end up in the final css. 
