@@ -1,22 +1,3 @@
-body {
-  counter-reset: example;
-  /* The body needs to initialize all the counters. */
-}
-.example {
-  /* Take the color of the class, saturate it to a fixed value, and lighten it to a fixed value (see top of file) */
-  background-color: #ffffd6;
-  /* Increment the counter for this theorem type. */
-  counter-increment: example;
-  /*These are the things that are common to all environments. */
-  border-radius: 4pt;
-  padding: 4pt;
-  margin-top: 4pt;
-  margin-bottom: 4pt;
-}
-.example > p:first-child:before {
-  content: "example " counter(example) ". ";
-  display: inline;
-  text-transform: capitalize;
-  /* CSS here only applies to one word, like "Theorem." or "Example." */
-  font-weight: bold;
+.example{
+  color:red;
 }
