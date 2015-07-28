@@ -1,6 +1,8 @@
+body {
+  counter-reset: example;
+}
 .example::before {
-  //content: "example " counter(example) ". ";
-  content: "Example";
+  "example " counter(example) ". ";
   display: inline;
   font-weight: bold;
 }
