@@ -72,7 +72,7 @@ We want to stop when the index reaches the end of the list of environments. */
       font-weight: bold; 
    } 
    .@{nameOfClass} ul{
-       padding-left: 1em;
+       padding-left: 2em;
    }
   
    /* Here we execute loop again for the next entry. */
