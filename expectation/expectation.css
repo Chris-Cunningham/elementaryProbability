@@ -1,5 +1,5 @@
 body {
-  counter-reset: exercise;
+/*  counter-reset: exercise;*/
 }
 
 .exercise { 
@@ -9,7 +9,7 @@ body {
 }
 
 div.exercise{
-  counter-reset: subexercise;
+/*  counter-reset: subexercise;*/
 }
 
 div.exercise::before
