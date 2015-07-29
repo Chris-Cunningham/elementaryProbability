@@ -19,5 +19,5 @@ div.exercise>div.exercise:before
 }  
 
 div.exercise>div.exercise{
-  counter-increment: subexercise;
+  counter-increment: ;
 }
