@@ -1,7 +1,7 @@
 body {
   counter-reset: exercise;
 }
-div.exercise > div{
+div.exercise{
   counter-reset: subexercise;
 }
 
@@ -17,4 +17,12 @@ div.exercise > div{
   display: inline;
   text-transform: capitalize;
   font-weight: bold; 
-} 
+}
+
+div.exercise>div::before
+{
+  content:"EXERCISE " counter(exercise) counter(subexercise ". ";
+  display: inline;
+  text-transform: capitalize;
+  font-weight: bold; 
+}  
