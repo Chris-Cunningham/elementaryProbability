@@ -1,14 +1,13 @@
 body {
-  counter-reset: @exercise;
+  counter-reset: exercise;
 }
 div.exercise > div{
-  counter-reset: @subexercise;     /* The divs needs to initialize all the subcounters. */
+  counter-reset: subexercise;
 }
 
 .exercise { 
-
   background-color: blue;
-  counter-increment: @exercise;
+  counter-increment: exercise;
   border-radius: 4pt; padding: 1em; margin-top: 4pt; margin-bottom: 4pt;
 }
 
@@ -16,6 +15,6 @@ div.exercise > div{
 {
   content:"EXERCISE " counter(exercise) ". ";
   display: inline;
-  text-transform: capitalize;   /* CSS here only applies to one word, like "Theorem." or "Example." */
+  text-transform: capitalize;
   font-weight: bold; 
 } 
