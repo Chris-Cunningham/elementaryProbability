@@ -21,8 +21,9 @@ div.exercise{
 
 div.exercise>div::before
 {
-  content:"EXERCISE " counter(exercise) counter(subexercise ". ";
+  content:"EXERCISE " counter(exercise) counter(subexercise) ". ";
   display: inline;
+  counter-increment: subexercise;
   text-transform: capitalize;
   font-weight: bold; 
 }  
