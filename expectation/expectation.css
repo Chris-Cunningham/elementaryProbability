@@ -8,7 +8,7 @@ body {
   border-radius: 4pt; padding: 1em; margin-top: 4pt; margin-bottom: 4pt;
 }
 
-div.exercise{
+div.exercise:not(div.exercise)>div.exercise{
   counter-reset: subexercise;
 }
 
