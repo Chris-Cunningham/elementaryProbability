@@ -8,7 +8,7 @@ div.exercise{
 /*  counter-reset: subexercise;*/
 }
 
-div.exercise::before
+div.exercise:before
 {
   content:"EXERCISE " counter(exercise) ". ";
   display: inline;
@@ -17,9 +17,9 @@ div.exercise::before
 
 div.exercise>div.exercise:before
 {
-  content:"EXERCISE " counter(exercise) counter(subexercise,lower-alpha) ". ";
+  /*content:"EXERCISE " counter(exercise) counter(subexercise,lower-alpha) ". ";*/
+  content:"";
   display: inline;
   counter-increment: subexercise;
-  text-transform: capitalize;
   font-weight: bold; 
 }  
