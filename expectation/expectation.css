@@ -107,7 +107,8 @@ div > div{
 
 div > div::before
 {
-  content:"exercise " counter(@exercise) "." counter(@subexercise) ". ";          
+/*  content:"exercise " counter(@exercise) "." counter(@subexercise) ". ";*/
+  content:"garbage"
   display: inline;
   text-transform: capitalize;
   font-weight: bold; 
