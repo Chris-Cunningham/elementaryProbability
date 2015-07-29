@@ -86,7 +86,7 @@ We want to stop when the index reaches the end of the list of environments. */
       text-transform: capitalize;
       font-weight: bold; 
    } 
-  
+
    /* Here we execute loop again for the next entry. */
    .loop(@index + 1);
 }
@@ -97,3 +97,11 @@ We want to stop when the index reaches the end of the list of environments. */
 
 /* This calls the loop with @index set to 1, thus starting the loop. Without this, all the code above would never run. */
 .loop(1);
+
+div.problem-environment > div.problem-environment::before
+{
+  content:"exercise " counter(@exercise) "." counter(@subexercise) ". ";          
+  display: inline;
+  text-transform: capitalize;
+  font-weight: bold; 
+} 
