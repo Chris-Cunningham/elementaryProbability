@@ -12,7 +12,7 @@ div.exercise{
   counter-reset: subexercise;
 }
 
-div.exercise
+div.exercise::before
 {
   content:"EXERCISE " counter(exercise) ". ";
   display: inline;
