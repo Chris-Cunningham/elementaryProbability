@@ -19,10 +19,6 @@ div.exercise::before
   font-weight: bold; 
 }
 
-div.exercise{
-  counter-increment: exercise;
-}
-
 div.exercise>div.exercise:before
 {
   content:"EXERCISE " counter(exercise) counter(subexercise,lower-alpha) ". ";
