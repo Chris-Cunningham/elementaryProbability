@@ -1,7 +1,7 @@
 .exercise { 
   background-color:orange ;
   opacity:50%;
-  counter-increment:;
+  counter-increment:garbage;
   border-radius: 4pt; padding: 1em; margin-top: 4pt; margin-bottom: 4pt;
 }
 
