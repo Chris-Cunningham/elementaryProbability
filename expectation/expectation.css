@@ -1,10 +1,10 @@
 
-.exercise > .exercise :: before
+div.exercise>div.exercise::before
 {
   content: "";
 }  
 
-.exercise > .exercise
+div.exercise>div.exercise
 {
   counter-increment: dummyCounter;
 }
