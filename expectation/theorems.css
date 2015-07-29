@@ -71,6 +71,7 @@ We want to stop when the index reaches the end of the list of environments. */
       /*These are the things that are common to all environments. */
       border-radius: 4pt; padding: 1em; margin-top: 4pt; margin-bottom: 4pt;
    }
+
    .@{nameOfClass}::before
    {
       content:"@{nameOfClass} " counter(@counterToIncrement) ". ";          
@@ -78,6 +79,17 @@ We want to stop when the index reaches the end of the list of environments. */
       text-transform: capitalize;   /* CSS here only applies to one word, like "Theorem." or "Example." */
       font-weight: bold; 
    } 
+   div.@{nameOfClass}::before
+   {
+      content:"@{nameOfClass} " counter(@counterToIncrement) counter(@subCounterToIncrement) ". ";          
+      display: inline;
+      text-transform: capitalize;
+      font-weight: bold; 
+   } 
+  
+   /* Here we execute loop again for the next entry. */
+   .loop(@index + 1);
+}
   
    /* Here we execute loop again for the next entry. */
    .loop(@index + 1);
