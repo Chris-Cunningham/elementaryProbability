@@ -77,7 +77,7 @@ We want to stop when the index reaches the end of the list of environments. */
    .@{nameOfClass}::before
    {
       /*content:"@{nameOfClass} " counter(@counterToIncrement) ". ";*/          
-      content: garbage
+      content: "garbage"
       display: inline;
       text-transform: capitalize;   /* CSS here only applies to one word, like "Theorem." or "Example." */
       font-weight: bold; 
