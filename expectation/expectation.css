@@ -6,7 +6,8 @@ div.exercise{
 }
 
 .exercise { 
-  background-color: blue;
+  background-color:orange ;
+  opacity:50%;
   counter-increment: exercise;
   border-radius: 4pt; padding: 1em; margin-top: 4pt; margin-bottom: 4pt;
 }
@@ -21,7 +22,7 @@ div.exercise{
 
 div.exercise>div::before
 {
-  content:"EXERCISE " counter(exercise) counter(subexercise) ". ";
+  content:"EXERCISE " counter(exercise) counter(subexercise,lower-alpha) ". ";
   display: inline;
   counter-increment: subexercise;
   text-transform: capitalize;
