@@ -17,11 +17,10 @@ div.exercise::before
   content:"EXERCISE " counter(exercise) ". ";
   display: inline;
   counter-increment: exercise;
-  text-transform: capitalize;
   font-weight: bold; 
 }
 
-div.exercise>div::before
+div.exercise>div.exercise:before
 {
   content:"EXERCISE " counter(exercise) counter(subexercise,lower-alpha) ". ";
   display: inline;
