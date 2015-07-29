@@ -8,3 +8,6 @@ div.exercise > div.exercise
 {
   counter-increment: dummyCounter;
 }
+
+/*   multiline
+   comment! */ 
