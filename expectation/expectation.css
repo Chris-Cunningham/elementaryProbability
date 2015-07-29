@@ -1,5 +1,7 @@
-/* Change this value to change the saturation and lightness of the background colors of the theorem environments. 
-The colors that you type below in theoremEnvironments will all get standardized to have the same saturation and lightness. */
+/* Change this value to change the saturation and lightness
+of the background colors of the theorem environments. 
+The colors that you type below in theoremEnvironments
+will all get standardized to have the same saturation and lightness. */
 @theoremEnvironmentSaturation: 100%;
 @theoremEnvironmentLightness: 92%;
 
@@ -74,7 +76,8 @@ We want to stop when the index reaches the end of the list of environments. */
 
    .@{nameOfClass}::before
    {
-      content:"@{nameOfClass} " counter(@counterToIncrement) ". ";          
+      //content:"@{nameOfClass} " counter(@counterToIncrement) ". ";          
+      content:"@{nameOfClass} " counter(@counterToIncrement) counter(@counterToIncrement)   ". ";
       display: inline;
       text-transform: capitalize;   /* CSS here only applies to one word, like "Theorem." or "Example." */
       font-weight: bold; 
