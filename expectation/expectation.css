@@ -1,21 +1,22 @@
 body {
   counter-reset: exercise;
 }
-div.exercise{
-  counter-reset: subexercise;
-}
 
 .exercise { 
   background-color:orange ;
   opacity:50%;
-  counter-increment: exercise;
   border-radius: 4pt; padding: 1em; margin-top: 4pt; margin-bottom: 4pt;
 }
 
-.exercise::before
+div.exercise{
+  counter-reset: subexercise;
+}
+
+div.exercise::before
 {
   content:"EXERCISE " counter(exercise) ". ";
   display: inline;
+  counter-increment: exercise;
   text-transform: capitalize;
   font-weight: bold; 
 }
