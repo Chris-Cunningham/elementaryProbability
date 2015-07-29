@@ -16,8 +16,11 @@ div.exercise::before
 {
   content:"EXERCISE " counter(exercise) ". ";
   display: inline;
-  counter-increment: exercise;
   font-weight: bold; 
+}
+
+div.exercise{
+  counter-increment: exercise;
 }
 
 div.exercise>div.exercise:before
