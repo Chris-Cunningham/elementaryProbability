@@ -19,7 +19,7 @@ div.exercise>div.exercise:before
 {
   content:"EXERCISE " counter(exercise) counter(subexercise,lower-alpha) ". ";
   display: inline;
-  /*counter-increment: subexercise;*/
+  counter-increment: subexercise;
   text-transform: capitalize;
   font-weight: bold; 
 }  
