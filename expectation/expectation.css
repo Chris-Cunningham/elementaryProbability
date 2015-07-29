@@ -17,7 +17,8 @@ div.exercise>div.exercise:before
   display: inline;
   font-weight: bold; 
 }  
-
+/*
 div.exercise>div.exercise{
   counter-increment: subexercise;
 }
+*/
