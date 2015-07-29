@@ -8,11 +8,11 @@ body {
   border-radius: 4pt; padding: 1em; margin-top: 4pt; margin-bottom: 4pt;
 }
 
-div.exercise:not(div.exercise)>div.exercise{
+div.exercise{
   counter-reset: subexercise;
 }
 
-div.exercise::before
+div.exercise
 {
   content:"EXERCISE " counter(exercise) ". ";
   display: inline;
