@@ -1,7 +1,6 @@
 .exercise { 
   background-color:orange ;
   opacity:50%;
-  counter-increment:exercise;
   border-radius: 4pt; padding: 1em; margin-top: 4pt; margin-bottom: 4pt;
 }
 
@@ -14,7 +13,6 @@ div.exercise:before
 
 div.exercise>div.exercise:before
 {
-  /*content:"EXERCISE " counter(exercise) counter(subexercise,lower-alpha) ". ";*/
   content:"";
   display: inline;
   font-weight: bold; 
@@ -23,4 +21,3 @@ div.exercise>div.exercise:before
 div.exercise>div.exercise{
   counter-increment: subexercise;
 }
-/*this is a comment */
