@@ -98,6 +98,10 @@ We want to stop when the index reaches the end of the list of environments. */
 /* This calls the loop with @index set to 1, thus starting the loop. Without this, all the code above would never run. */
 .loop(1);
 
+div > div{
+   counter-reset: @subexercise;
+}
+
 div > div::before
 {
   content:"exercise " counter(@exercise) "." counter(@subexercise) ". ";          
