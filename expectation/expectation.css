@@ -4,10 +4,6 @@
   border-radius: 4pt; padding: 1em; margin-top: 4pt; margin-bottom: 4pt;
 }
 
-div.exercise{
-/*  counter-reset: subexercise;*/
-}
-
 div.exercise:before
 {
   content:"EXERCISE " counter(exercise) ". ";
